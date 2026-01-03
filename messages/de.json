@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "brand": "SaaSify",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "testimonials": "Referenzen",
+    "portfolio": "Portfolio",
+    "signIn": "Anmelden",
+    "getStarted": "Loslegen"
+  },
+  "hero": {
+    "badge": "🚀 Neu: KI-gestützte Analysen",
+    "title": "Verwandeln Sie Ihr Unternehmen",
+    "titleHighlight": "Mit Einer Plattform",
+    "description": "Optimieren Sie Ihren Workflow, steigern Sie die Produktivität und skalieren Sie Ihr Unternehmen mit unserer All-in-One-SaaS-Plattform. Schließen Sie sich Tausenden von Teams an, die bereits SaaSify nutzen.",
+    "startTrial": "Kostenlose Testversion starten",
+    "watchDemo": "Demo ansehen",
+    "noCard": "Keine Kreditkarte erforderlich",
+    "freeTrial": "14-tägige kostenlose Testversion",
+    "cancelAnytime": "Jederzeit kündbar"
+  },
+  "features": {
+    "title": "Alles, Was Sie Zum Erfolg Brauchen",
+    "subtitle": "Leistungsstarke Funktionen, die Ihnen helfen, intelligenter zu arbeiten, nicht härter",
+    "lightningFast": {
+      "title": "Blitzschnell",
+      "description": "Auf Geschwindigkeit ausgelegt mit modernster Technologie. Erleben Sie sofortige Ladezeiten und nahtlose Leistung."
+    },
+    "security": {
+      "title": "Unternehmenssicherheit",
+      "description": "Bank-Level-Verschlüsselung und Sicherheitsprotokolle, um Ihre Daten sicher und konform zu halten."
+    },
+    "analytics": {
+      "title": "Erweiterte Analysen",
+      "description": "Echtzeit-Einblicke und anpassbare Dashboards für datengesteuerte Entscheidungen."
+    },
+    "ai": {
+      "title": "KI-gestützt",
+      "description": "Nutzen Sie künstliche Intelligenz, um Aufgaben zu automatisieren und die Produktivität zu steigern."
+    },
+    "integrations": {
+      "title": "Integrationen",
+      "description": "Verbinden Sie sich mit über 100 beliebten Tools und Diensten, die Sie bereits verwenden."
+    },
+    "mobile": {
+      "title": "Mobil bereit",
+      "description": "Greifen Sie von überall auf Ihren Arbeitsbereich zu mit unseren nativen Mobile Apps."
+    }
+  },
+  "testimonials": {
+    "title": "Von Teams Weltweit Geliebt",
+    "subtitle": "Sehen Sie, was unsere Kunden sagen",
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "CEO, TechStart",
+      "content": "SaaSify hat unsere Arbeitsweise völlig verändert. Unsere Produktivität ist seit dem Wechsel um 40% gestiegen."
+    },
+    "michael": {
+      "name": "Michael Chen",
+      "role": "CTO, InnovateLab",
+      "content": "Die beste Investition, die wir getätigt haben. Die Plattform ist intuitiv, leistungsstark und das Support-Team ist außergewöhnlich."
+    },
+    "emily": {
+      "name": "Emily Rodriguez",
+      "role": "Gründerin, GrowthCo",
+      "content": "Wir haben viele Tools ausprobiert, aber nichts kommt an SaaSify heran. Es ist zu einem wesentlichen Bestandteil unserer täglichen Arbeit geworden."
+    }
+  },
+  "pricing": {
+    "title": "Einfache, Transparente Preise",
+    "subtitle": "Wählen Sie den Plan, der zu Ihnen passt",
+    "mostPopular": "Beliebtester",
+    "starter": {
+      "name": "Starter",
+      "price": "29€",
+      "period": "pro Monat",
+      "description": "Perfekt für Einzelpersonen und kleine Teams",
+      "cta": "Kostenlose Testversion starten",
+      "features": [
+        "Bis zu 5 Teammitglieder",
+        "10GB Speicher",
+        "Basis-Analysen",
+        "E-Mail-Support",
+        "Mobile App-Zugang"
+      ]
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "99€",
+      "period": "pro Monat",
+      "description": "Ideal für wachsende Unternehmen",
+      "cta": "Kostenlose Testversion starten",
+      "features": [
+        "Bis zu 25 Teammitglieder",
+        "100GB Speicher",
+        "Erweiterte Analysen",
+        "Prioritäts-Support",
+        "API-Zugang",
+        "Benutzerdefinierte Integrationen"
+      ]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Individuell",
+      "period": "",
+      "description": "Für große Organisationen",
+      "cta": "Verkauf kontaktieren",
+      "features": [
+        "Unbegrenzte Teammitglieder",
+        "Unbegrenzter Speicher",
+        "Dedizierter Support",
+        "Individueller SLA",
+        "On-Premise-Bereitstellung",
+        "Erweiterte Sicherheit"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Bereit Loszulegen?",
+    "subtitle": "Schließen Sie sich Tausenden von Teams an, die bereits SaaSify nutzen, um ihren Workflow zu transformieren",
+    "button": "Starten Sie Ihre Kostenlose Testversion"
+  },
+  "footer": {
+    "description": "Verwandeln Sie Ihr Unternehmen mit unserer All-in-One-Plattform.",
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "about": "Über uns",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "security": "Sicherheit",
+    "updates": "Updates",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "copyright": "© 2024 SaaSify. Alle Rechte vorbehalten."
+  }
+}
+
