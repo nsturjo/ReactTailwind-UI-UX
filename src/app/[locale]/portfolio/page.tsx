@@ -18,10 +18,16 @@ export default function Portfolio() {
             Coming soon...
           </p>
         </div>
-        <div className="text-center">
+        <div className="text-center space-y-4">
+          <Link 
+            href={getLocalizedHref('/creative-agency')} 
+            className="text-blue-600 dark:text-blue-400 hover:underline block"
+          >
+            {t('portfolio.viewCreativeAgency')}
+          </Link>
           <Link 
             href={getLocalizedHref('/')} 
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-blue-600 dark:text-blue-400 hover:underline block"
           >
             ← Back to Home
           </Link>

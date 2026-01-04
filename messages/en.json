@@ -134,6 +134,91 @@
     "terms": "Terms",
     "cookiePolicy": "Cookie Policy",
     "copyright": "© 2024 SaaSify. All rights reserved."
+  },
+  "portfolio": {
+    "viewCreativeAgency": "View Creative Agency →"
+  },
+  "creativeAgency": {
+    "nav": {
+      "brand": "CreativeStudio",
+      "work": "Work",
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "letsTalk": "Let's Talk"
+    },
+    "hero": {
+      "badge": "✨ Award-Winning Agency",
+      "title": "We Create",
+      "titleHighlight": "Digital Magic",
+      "description": "Transforming brands through creative storytelling, stunning design, and innovative digital experiences. We bring your vision to life.",
+      "viewWork": "View Our Work",
+      "process": "Our Process",
+      "projectsDelivered": "Projects Delivered",
+      "happyClients": "Happy Clients",
+      "yearsExperience": "Years Experience"
+    },
+    "services": {
+      "title": "What We Do",
+      "subtitle": "Full-service creative agency specializing in brand identity, web design, and digital experiences",
+      "brandIdentity": {
+        "title": "Brand Identity",
+        "description": "Complete brand strategy, logo design, and visual identity systems that tell your unique story."
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": "Beautiful, responsive websites that convert visitors into customers and reflect your brand perfectly."
+      },
+      "uiUxDesign": {
+        "title": "UI/UX Design",
+        "description": "Intuitive user interfaces and seamless experiences that users love and remember."
+      },
+      "motionGraphics": {
+        "title": "Motion Graphics",
+        "description": "Engaging animations and video content that capture attention and communicate your message."
+      },
+      "photography": {
+        "title": "Photography",
+        "description": "Professional photography services for products, events, and brand storytelling."
+      },
+      "digitalStrategy": {
+        "title": "Digital Strategy",
+        "description": "Data-driven strategies to grow your online presence and achieve your business goals."
+      }
+    },
+    "work": {
+      "title": "Featured Work",
+      "subtitle": "A selection of our recent creative projects",
+      "viewAllProjects": "View All Projects"
+    },
+    "about": {
+      "title": "We're a Creative",
+      "titleHighlight": "Dream Team",
+      "description1": "Founded in 2009, CreativeStudio has been at the forefront of digital creativity, helping brands stand out in an ever-evolving digital landscape.",
+      "description2": "Our team of designers, developers, and strategists work together to create exceptional experiences that drive results. We believe in the power of creativity, collaboration, and innovation.",
+      "yearsExcellence": "Years of Excellence",
+      "projectsCompleted": "Projects Completed",
+      "globalClients": "Global Clients",
+      "teamMembers": "Team Members"
+    },
+    "testimonials": {
+      "title": "Client Love",
+      "subtitle": "What our clients say about working with us"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let's create something amazing together. Get in touch and let's discuss your next big idea.",
+      "scheduleCall": "Schedule a Call",
+      "viewPortfolio": "View Portfolio"
+    },
+    "footer": {
+      "description": "Creating digital experiences that inspire and engage.",
+      "services": "Services",
+      "company": "Company",
+      "connect": "Connect",
+      "home": "Home",
+      "copyright": "© 2024 CreativeStudio. All rights reserved."
+    }
   }
 }
 
