@@ -11,6 +11,12 @@ export default createMiddleware({
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(de|en|bn)/:path*']
+  // Exclude creative-agency and other non-locale routes
+  matcher: [
+    // Match root path
+    '/',
+    // Match locale paths only
+    '/(de|en|bn)/:path*'
+  ]
 };
 
