@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getTranslations } from 'next-intl/server';
 
 export default async function CreativeAgency({
   params,
@@ -6,6 +7,7 @@ export default async function CreativeAgency({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const t = await getTranslations('creativeAgency');
   const getLocalizedHref = (href: string) => `/${locale}${href === '/' ? '' : href}`;
 
   return (
@@ -16,25 +18,25 @@ export default async function CreativeAgency({
           <div className="flex justify-between items-center h-20">
             <Link href={getLocalizedHref('/creative-agency')} className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                CreativeStudio
+                {t('nav.brand')}
               </span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#work" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors font-medium">
-                Work
+                {t('nav.work')}
               </a>
               <a href="#services" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors font-medium">
-                Services
+                {t('nav.services')}
               </a>
               <a href="#about" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors font-medium">
-                About
+                {t('nav.about')}
               </a>
               <a href="#contact" className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors font-medium">
-                Contact
+                {t('nav.contact')}
               </a>
             </div>
             <button className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-3 rounded-full hover:opacity-90 transition-opacity font-medium">
-              Let's Talk
+              {t('nav.letsTalk')}
             </button>
           </div>
         </div>
@@ -48,39 +50,39 @@ export default async function CreativeAgency({
             <div>
               <div className="inline-block mb-6">
                 <span className="px-4 py-2 bg-pink-100 dark:bg-pink-950/30 text-pink-600 dark:text-pink-400 rounded-full text-sm font-medium">
-                  ✨ Award-Winning Agency
+                  {t('hero.badge')}
                 </span>
               </div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-zinc-900 dark:text-zinc-50 mb-6 leading-tight">
-                We Create
+                {t('hero.title')}
                 <br />
                 <span className="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  Digital Magic
+                  {t('hero.titleHighlight')}
                 </span>
               </h1>
               <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-10 leading-relaxed">
-                Transforming brands through creative storytelling, stunning design, and innovative digital experiences. We bring your vision to life.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-pink-500/50">
-                  View Our Work
+                  {t('hero.viewWork')}
                 </button>
                 <button className="border-2 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 px-8 py-4 rounded-full text-lg font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
-                  Our Process
+                  {t('hero.process')}
                 </button>
               </div>
               <div className="mt-12 flex items-center gap-8 text-sm text-zinc-500 dark:text-zinc-400">
                 <div>
                   <div className="text-3xl font-bold text-zinc-900 dark:text-zinc-50">200+</div>
-                  <div>Projects Delivered</div>
+                  <div>{t('hero.projectsDelivered')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-zinc-900 dark:text-zinc-50">50+</div>
-                  <div>Happy Clients</div>
+                  <div>{t('hero.happyClients')}</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-zinc-900 dark:text-zinc-50">15+</div>
-                  <div>Years Experience</div>
+                  <div>{t('hero.yearsExperience')}</div>
                 </div>
               </div>
             </div>
@@ -105,10 +107,10 @@ export default async function CreativeAgency({
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">
-              What We Do
+              {t('services.title')}
             </h2>
             <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Full-service creative agency specializing in brand identity, web design, and digital experiences
+              {t('services.subtitle')}
             </p>
           </div>
           
@@ -116,33 +118,33 @@ export default async function CreativeAgency({
             {[
               {
                 icon: "🎨",
-                title: "Brand Identity",
-                description: "Complete brand strategy, logo design, and visual identity systems that tell your unique story."
+                title: t('services.brandIdentity.title'),
+                description: t('services.brandIdentity.description')
               },
               {
                 icon: "💻",
-                title: "Web Design",
-                description: "Beautiful, responsive websites that convert visitors into customers and reflect your brand perfectly."
+                title: t('services.webDesign.title'),
+                description: t('services.webDesign.description')
               },
               {
                 icon: "📱",
-                title: "UI/UX Design",
-                description: "Intuitive user interfaces and seamless experiences that users love and remember."
+                title: t('services.uiUxDesign.title'),
+                description: t('services.uiUxDesign.description')
               },
               {
                 icon: "🎬",
-                title: "Motion Graphics",
-                description: "Engaging animations and video content that capture attention and communicate your message."
+                title: t('services.motionGraphics.title'),
+                description: t('services.motionGraphics.description')
               },
               {
                 icon: "📸",
-                title: "Photography",
-                description: "Professional photography services for products, events, and brand storytelling."
+                title: t('services.photography.title'),
+                description: t('services.photography.description')
               },
               {
                 icon: "🚀",
-                title: "Digital Strategy",
-                description: "Data-driven strategies to grow your online presence and achieve your business goals."
+                title: t('services.digitalStrategy.title'),
+                description: t('services.digitalStrategy.description')
               }
             ].map((service, index) => (
               <div key={index} className="bg-white dark:bg-zinc-800 p-8 rounded-2xl border border-zinc-200 dark:border-zinc-700 hover:shadow-xl hover:scale-105 transition-all duration-300">
@@ -164,10 +166,10 @@ export default async function CreativeAgency({
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">
-              Featured Work
+              {t('work.title')}
             </h2>
             <p className="text-xl text-zinc-600 dark:text-zinc-400">
-              A selection of our recent creative projects
+              {t('work.subtitle')}
             </p>
           </div>
           
@@ -229,7 +231,7 @@ export default async function CreativeAgency({
           
           <div className="text-center mt-12">
             <button className="border-2 border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 px-8 py-4 rounded-full text-lg font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
-              View All Projects
+              {t('work.viewAllProjects')}
             </button>
           </div>
         </div>
@@ -241,34 +243,34 @@ export default async function CreativeAgency({
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-6">
-                We're a Creative
+                {t('about.title')}
                 <br />
                 <span className="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  Dream Team
+                  {t('about.titleHighlight')}
                 </span>
               </h2>
               <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">
-                Founded in 2009, CreativeStudio has been at the forefront of digital creativity, helping brands stand out in an ever-evolving digital landscape.
+                {t('about.description1')}
               </p>
               <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed">
-                Our team of designers, developers, and strategists work together to create exceptional experiences that drive results. We believe in the power of creativity, collaboration, and innovation.
+                {t('about.description2')}
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <div className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">15+</div>
-                  <div className="text-zinc-600 dark:text-zinc-400">Years of Excellence</div>
+                  <div className="text-zinc-600 dark:text-zinc-400">{t('about.yearsExcellence')}</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">200+</div>
-                  <div className="text-zinc-600 dark:text-zinc-400">Projects Completed</div>
+                  <div className="text-zinc-600 dark:text-zinc-400">{t('about.projectsCompleted')}</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">50+</div>
-                  <div className="text-zinc-600 dark:text-zinc-400">Global Clients</div>
+                  <div className="text-zinc-600 dark:text-zinc-400">{t('about.globalClients')}</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">25+</div>
-                  <div className="text-zinc-600 dark:text-zinc-400">Team Members</div>
+                  <div className="text-zinc-600 dark:text-zinc-400">{t('about.teamMembers')}</div>
                 </div>
               </div>
             </div>
@@ -301,10 +303,10 @@ export default async function CreativeAgency({
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">
-              Client Love
+              {t('testimonials.title')}
             </h2>
             <p className="text-xl text-zinc-600 dark:text-zinc-400">
-              What our clients say about working with us
+              {t('testimonials.subtitle')}
             </p>
           </div>
           
@@ -363,17 +365,17 @@ export default async function CreativeAgency({
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Ready to Start Your Project?
+            {t('cta.title')}
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Let's create something amazing together. Get in touch and let's discuss your next big idea.
+            {t('cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity">
-              Schedule a Call
+              {t('cta.scheduleCall')}
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-colors">
-              View Portfolio
+              {t('cta.viewPortfolio')}
             </button>
           </div>
         </div>
@@ -385,32 +387,32 @@ export default async function CreativeAgency({
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                CreativeStudio
+                {t('nav.brand')}
               </span>
               <p className="text-zinc-600 dark:text-zinc-400 mt-4">
-                Creating digital experiences that inspire and engage.
+                {t('footer.description')}
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-4">Services</h4>
+              <h4 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-4">{t('footer.services')}</h4>
               <ul className="space-y-2 text-zinc-600 dark:text-zinc-400">
-                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Brand Identity</a></li>
-                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Web Design</a></li>
-                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">UI/UX Design</a></li>
-                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Motion Graphics</a></li>
+                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('services.brandIdentity.title')}</a></li>
+                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('services.webDesign.title')}</a></li>
+                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('services.uiUxDesign.title')}</a></li>
+                <li><a href="#services" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('services.motionGraphics.title')}</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-4">Company</h4>
+              <h4 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-4">{t('footer.company')}</h4>
               <ul className="space-y-2 text-zinc-600 dark:text-zinc-400">
-                <li><a href="#about" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">About Us</a></li>
-                <li><a href="#work" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Our Work</a></li>
-                <li><a href="#contact" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a></li>
-                <li><Link href={getLocalizedHref('/')} className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Home</Link></li>
+                <li><a href="#about" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('nav.about')}</a></li>
+                <li><a href="#work" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('nav.work')}</a></li>
+                <li><a href="#contact" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('nav.contact')}</a></li>
+                <li><Link href={getLocalizedHref('/')} className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('footer.home')}</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-4">Connect</h4>
+              <h4 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-4">{t('footer.connect')}</h4>
               <ul className="space-y-2 text-zinc-600 dark:text-zinc-400">
                 <li><a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Instagram</a></li>
                 <li><a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Twitter</a></li>
@@ -420,7 +422,7 @@ export default async function CreativeAgency({
             </div>
           </div>
           <div className="border-t border-zinc-200 dark:border-zinc-800 pt-8 text-center text-zinc-600 dark:text-zinc-400">
-            <p>&copy; 2024 CreativeStudio. All rights reserved.</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>
