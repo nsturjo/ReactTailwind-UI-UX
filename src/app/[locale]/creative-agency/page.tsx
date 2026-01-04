@@ -1,13 +1,20 @@
 import Link from "next/link";
 
-export default function CreativeAgency() {
+export default async function CreativeAgency({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const getLocalizedHref = (href: string) => `/${locale}${href === '/' ? '' : href}`;
+
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <Link href="/creative-agency" className="flex items-center">
+            <Link href={getLocalizedHref('/creative-agency')} className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
                 CreativeStudio
               </span>
@@ -399,7 +406,7 @@ export default function CreativeAgency() {
                 <li><a href="#about" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">About Us</a></li>
                 <li><a href="#work" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Our Work</a></li>
                 <li><a href="#contact" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a></li>
-                <li><Link href="/" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Home</Link></li>
+                <li><Link href={getLocalizedHref('/')} className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Home</Link></li>
               </ul>
             </div>
             <div>
