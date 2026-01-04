@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "brand": "SaaSify",
+    "features": "Features",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "portfolio": "Portfolio",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "🚀 New: AI-Powered Analytics",
+    "title": "Transform Your Business",
+    "titleHighlight": "With One Platform",
+    "description": "Streamline your workflow, boost productivity, and scale your business with our all-in-one SaaS platform. Join thousands of teams already using SaaSify.",
+    "startTrial": "Start Free Trial",
+    "watchDemo": "Watch Demo",
+    "noCard": "No credit card required",
+    "freeTrial": "14-day free trial",
+    "cancelAnytime": "Cancel anytime"
+  },
+  "features": {
+    "title": "Everything You Need to Succeed",
+    "subtitle": "Powerful features designed to help you work smarter, not harder",
+    "lightningFast": {
+      "title": "Lightning Fast",
+      "description": "Built for speed with cutting-edge technology. Experience instant load times and seamless performance."
+    },
+    "security": {
+      "title": "Enterprise Security",
+      "description": "Bank-level encryption and security protocols to keep your data safe and compliant."
+    },
+    "analytics": {
+      "title": "Advanced Analytics",
+      "description": "Real-time insights and customizable dashboards to make data-driven decisions."
+    },
+    "ai": {
+      "title": "AI-Powered",
+      "description": "Leverage artificial intelligence to automate tasks and boost productivity."
+    },
+    "integrations": {
+      "title": "Integrations",
+      "description": "Connect with 100+ popular tools and services you already use."
+    },
+    "mobile": {
+      "title": "Mobile Ready",
+      "description": "Access your workspace from anywhere with our native mobile apps."
+    }
+  },
+  "testimonials": {
+    "title": "Loved by Teams Worldwide",
+    "subtitle": "See what our customers have to say",
+    "sarah": {
+      "name": "Sarah Johnson",
+      "role": "CEO, TechStart",
+      "content": "SaaSify has completely transformed how we work. Our productivity has increased by 40% since switching."
+    },
+    "michael": {
+      "name": "Michael Chen",
+      "role": "CTO, InnovateLab",
+      "content": "The best investment we've made. The platform is intuitive, powerful, and the support team is exceptional."
+    },
+    "emily": {
+      "name": "Emily Rodriguez",
+      "role": "Founder, GrowthCo",
+      "content": "We've tried many tools, but nothing comes close to SaaSify. It's become essential to our daily operations."
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that's right for you",
+    "mostPopular": "Most Popular",
+    "starter": {
+      "name": "Starter",
+      "price": "$29",
+      "period": "per month",
+      "description": "Perfect for individuals and small teams",
+      "cta": "Start Free Trial",
+      "features": [
+        "Up to 5 team members",
+        "10GB storage",
+        "Basic analytics",
+        "Email support",
+        "Mobile app access"
+      ]
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "$99",
+      "period": "per month",
+      "description": "Best for growing businesses",
+      "cta": "Start Free Trial",
+      "features": [
+        "Up to 25 team members",
+        "100GB storage",
+        "Advanced analytics",
+        "Priority support",
+        "API access",
+        "Custom integrations"
+      ]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For large organizations",
+      "cta": "Contact Sales",
+      "features": [
+        "Unlimited team members",
+        "Unlimited storage",
+        "Dedicated support",
+        "Custom SLA",
+        "On-premise deployment",
+        "Advanced security"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Join thousands of teams already using SaaSify to transform their workflow",
+    "button": "Start Your Free Trial"
+  },
+  "footer": {
+    "description": "Transform your business with our all-in-one platform.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "security": "Security",
+    "updates": "Updates",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© 2024 SaaSify. All rights reserved."
+  }
+}
+
